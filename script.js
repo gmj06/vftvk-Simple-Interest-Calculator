@@ -23,11 +23,9 @@ function compute()
     // year based on the number of years selected
     var year = new Date().getFullYear()+parseInt(years);
 
-    // final amount (princial + interest) after the number of years selected at the rate 
-    var amount = (parseFloat(principal, 2) + parseFloat(interest));
-
+   
     // final output 
-    document.getElementById("result").innerHTML = "If you deposit <mark>" + principal + "</mark>, <br\>at an interest rate of <mark>" + rate + "%</mark>. <br\>You will receive an amount of <mark>" + amount + "</mark>, <br\>in the year <mark>"+ year + "<mark><br \>" 
+    document.getElementById("result").innerHTML = "If you deposit <mark>" + principal + "</mark>, <br\>at an interest rate of <mark>" + rate + "%</mark>. <br\>You will receive an amount of <mark>" + parseFloat(interest) + "</mark>, <br\>in the year <mark>"+ year + "<mark><br \>" 
     
 }
 
